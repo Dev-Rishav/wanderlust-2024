@@ -51,6 +51,10 @@ const listingSchema = new Schema({
     coordinates: {
       type: [Number],
       required: true
+    },
+    tags:{
+      type: [String],
+      default: []
     }
   }
 });
