@@ -1,7 +1,7 @@
 const listing = require("../models/listing.js");
-const mbxgeocoding = require('@mapbox/mapbox-sdk/services/geocoding'); 
-const maptoken = process.env.MAP_TOKEN;
-const geocodingClient = mbxgeocoding({ accessToken: maptoken });
+// const mbxgeocoding = require('@mapbox/mapbox-sdk/services/geocoding'); 
+// const maptoken = process.env.MAP_TOKEN;
+// const geocodingClient = mbxgeocoding({ accessToken: maptoken });
 const cloudinary = require('cloudinary').v2;
 const {
     ERROR_FETCH_LISTINGS,
@@ -70,10 +70,10 @@ module.exports.createpost = async (req, res) => {
         const { title, description, price, country, location } = req.body.listing;
 
       // Geocoding to get coordinates from location
-        const geoData = await geocodingClient.forwardGeocode({
-            query: location,
-            limit: 1
-        }).send();
+        // const geoData = await geocodingClient.forwardGeocode({
+        //     query: location,
+        //     limit: 1
+        // }).send();
 
         const newListing = new listing({
             title,
@@ -81,7 +81,7 @@ module.exports.createpost = async (req, res) => {
             price,
             country,
             location,
-            geometry: geoData.body.features[0].geometry,
+            // geometry: geoData.body.features[0].geometry,
             owner: req.user._id,
             image: []
         });
@@ -180,13 +180,13 @@ module.exports.saveEditpost = async (req, res) => {
         let location = req.body.listing.location
 
         // Forword geocodding.using mapbox SDK
-        const geoData = await geocodingClient.forwardGeocode({
-            query: location,
-            limit: 1
-        }).send();
+        // const geoData = await geocodingClient.forwardGeocode({
+        //     query: location,
+        //     limit: 1
+        // }).send();
 
         // Extract updated geometry
-        let updatedGeometry = geoData.body.features[0].geometry;
+        // let updatedGeometry = geoData.body.features[0].geometry;
 
 
         let editList = await listing.findById(id);
@@ -209,7 +209,7 @@ module.exports.saveEditpost = async (req, res) => {
         editList.price = req.body.listing.price;
         editList.location = location; // Pass new location
         editList.country = req.body.listing.country;
-        editList.geometry = updatedGeometry; // Save the GeoJSON object in geometry
+        // editList.geometry = updatedGeometry; // Save the GeoJSON object in geometry
 
         await editList.save();
 

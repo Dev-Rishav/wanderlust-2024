@@ -1,8 +1,7 @@
 <% layout("/layouts/boilerplate") %>
 <script>
-    let accessToken = "<%= process.env.MAP_TOKEN %>";
+    // let accessToken = "<%= process.env.MAP_TOKEN %>";
     let list = <%- JSON.stringify(list) %>;
-    
 </script>
 <style>
 .show-img {
@@ -219,7 +218,7 @@
             <!-- MAP -->
             <div class="col-10 offset-1">
                 <h3 class="text-center" style="padding: 10px; font-family: rakkas;">Where you will be</h3>
-                <div id="map" style="width: 100%; height: 400px;"></div>
+                <!-- <div id="map" style="width: 100%; height: 400px;"></div> -->
             </div>
 
             
@@ -328,5 +327,5 @@
         </div>
     </div>
     
-    <script src="/js/map.js"></script> <!--Call the script file at the end because the map will be displayed at the end-->
+    <!-- <script src="/js/map.js"></script> --> <!--Call the script file at the end because the map will be displayed at the end-->
 </body>
