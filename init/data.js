@@ -14,6 +14,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-110.4544, 46.9219], // Longitude, Latitude
     },
+    tags: ["forest", "Moutain", "Cabin"],
   },
   {
     title: "Beachfront Villa in Greece",
@@ -46,6 +47,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-84.0730, 9.7489], // Longitude, Latitude
     },
+    tags: ["forest", "Eco-Friendly", "Treehouse"],
   },
   {
     title: "Historic Cottage in Charleston",
@@ -62,6 +64,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-79.9336, 32.7765], // Longitude, Latitude
     },
+    tags: ["Historic", "Cottage", "Garden"],
   },
   {
     title: "Modern Apartment in Tokyo",
@@ -78,6 +81,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [139.6917, 35.6895], // Longitude, Latitude
     },
+    tags: ["City", "Modern", "Apartment"],
   },
   {
     title: "Lakefront Cabin in New Hampshire",
@@ -94,6 +98,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-71.5724, 43.7696], // Longitude, Latitude
     },
+    tags: ["Lake", "Cabin", "Mountain"],
   },
   {
     title: "Luxury Villa in the Maldives",
@@ -110,6 +115,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [73.5158, 3.2028], // Longitude, Latitude
     },
+    tags: ["Luxury", "Villa", "Ocean"],
   },
   {
     title: "Ski Chalet in Aspen",
@@ -126,6 +132,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-106.8175, 39.1911], // Longitude, Latitude
     },
+    tags: ["Ski", "Chalet", "Luxury", "Mountain"],
   },
   {
     title: "Secluded Beach House in Costa Rica",
@@ -142,6 +149,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-84.0730, 9.7489], // Longitude, Latitude
     },
+    tags: ["Beach", "House", "Secluded"],
   },
   {
     title: "Cozy Beachfront Cottage",
@@ -158,6 +166,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-118.7798, 34.0259] // Malibu coordinates
     },
+    tags: ["Beach", "Cottage", "Ocean"],
   },
   {
     title: "Modern Loft in Downtown",
@@ -174,6 +183,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-74.0060, 40.7128] // New York City coordinates
     },
+    tags: ["City", "Modern", "Loft"],
   },
   {
     title: "Mountain Retreat",
@@ -190,6 +200,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-106.8200, 39.1911] // Aspen coordinates
     },
+    tags: ["Mountain", "Cabin", "Nature"],
   },
   {
     title: "Historic Villa in Tuscany",
@@ -206,6 +217,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [11.2558, 43.7696] // Florence coordinates
     },
+    tags: ["Historic", "Villa", "Tuscany"],
   },
   {
     title: "Secluded Treehouse Getaway",
@@ -222,6 +234,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-122.6765, 45.5234] // Portland coordinates
     },
+    tags: ["Treehouse", "Nature", "Secluded"],
   },
   {
     title: "Beachfront Paradise",
@@ -238,6 +251,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-86.8466, 21.1619] // Cancun coordinates
     },
+    tags: ["Beach", "Condo", "Ocean"],
   },
   {
     title: "Rustic Cabin by the Lake",
@@ -254,6 +268,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-120.0324, 38.9397] // Lake Tahoe coordinates
     },
+    tags: ["Cabin", "Lake", "Nature"],
   },
   {
     title: "Luxury Penthouse with City Views",
@@ -270,6 +285,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-118.2437, 34.0522] // Los Angeles coordinates
     },
+    tags : ["Luxury", "Penthouse", "City"]
   },
   {
     title: "Ski-In/Ski-Out Chalet",
@@ -286,6 +302,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [7.2381, 46.0857] // Verbier coordinates
     },
+    tags: ["Ski", "Chalet", "Alps"],
   },
   {
     title: "Safari Lodge in the Serengeti",
@@ -302,6 +319,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [34.8330, -2.3330] // Serengeti coordinates
     },
+    tags: ["Safari", "Lodge", "Wildlife", "Nature","Forest" ],
   },
   {
     title: "Historic Canal House",
@@ -318,6 +336,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [4.8952, 52.3676] // Amsterdam coordinates
     },
+    tags: ["Historic", "Canal House", "City"],
   },
   {
     title: "Glamorous Hollywood Hills Villa",
@@ -334,6 +353,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [-118.3215, 34.0928] // Hollywood coordinates
     },
+    tags: ["Glamorous", "Villa", "City"],
   },
   {
     title: "Rural French Countryside Escape",
@@ -350,6 +370,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [5.8700, 43.8490] // Provence coordinates
     },
+    tags: ["Countryside", "Vineyards", "Nature"],
   },
   {
     title: "Modern Japanese Ryokan",
@@ -366,6 +387,7 @@ const sampleListings = [
       type: "Point",
       coordinates: [135.7681, 35.0116] // Kyoto coordinates
     },
+    tags: ["Japanese", "Ryokan", "Garden"],
   },
 ];
 
